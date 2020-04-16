@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Pane layoutX="-17.0" prefHeight="334.0" prefWidth="526.0">
+         <children>
+            <Label fx:id="isConnected" layoutX="51.0" layoutY="25.0" prefHeight="25.0" prefWidth="185.0" text="Status" />
+            <Button fx:id="seOppgaver" layoutX="38.0" layoutY="75.0" mnemonicParsing="false" onAction="#SeOppgaver" prefHeight="42.0" prefWidth="185.0" text="Se oppgaver" />
+            <Button fx:id="Lagre" layoutX="328.0" layoutY="248.0" mnemonicParsing="false" onAction="#Lagre" prefHeight="25.0" prefWidth="105.0" text="Lagre" />
+            <Label fx:id="leggTil" layoutX="131.0" layoutY="206.0" prefHeight="42.0" prefWidth="132.0" text="Legg til ny oppgave:" />
+            <TextField fx:id="txtField" layoutX="263.0" layoutY="210.0" prefHeight="35.0" prefWidth="234.0" />
+            <TableView fx:id="table" layoutX="244.0" layoutY="14.0" prefHeight="164.0" prefWidth="359.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <Label layoutX="108.0" layoutY="303.0" text="Skriv inn fullført oppgave:" />
+            <TextField fx:id="txtOppgave" layoutX="263.0" layoutY="299.0" prefHeight="35.0" prefWidth="234.0" />
+         </children>
+      </Pane>
+      <Button fx:id="btnEndre" layoutX="314.0" layoutY="341.0" mnemonicParsing="false" onAction="#fjernOppave" text="Endre lagringer" />
+   </children>
+</AnchorPane>
